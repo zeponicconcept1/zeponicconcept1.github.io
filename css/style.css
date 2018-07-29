@@ -1,0 +1,201 @@
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+/* Global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: #fff;
+    color: #265515;
+    padding-top: 15px;
+    min-height: 70px;
+    border-bottom: #8fc44e 3px solid;
+}
+
+header a {
+    color: #2F4F4F;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header img {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+header .current a {
+    color: #8fc44e;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#logo:hover {
+    position: relative;
+    top: -2px;
+}
+
+/* Showcase */
+#showcase1 {
+    min-height: 400px;
+    background: url('../img/lettuce.jpg') no-repeat 0 -200px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase1 h1 {
+    margin-top: 100px;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+/* #showcase2 {
+    margin-top: 15px;
+    min-height: 100%;
+    max-width: 90%;
+}
+
+#showcase2 h1 {
+    margin-top: 100px;
+    font-size: 70px;
+    margin-bottom: 10px;
+} */
+
+/* Main-content */
+.main-content {
+    background-color: #f4f4f4;
+    padding-bottom: 20px;
+}
+
+/* Boxes */
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img {
+    width: 90px;
+}
+#boxes .box a {
+    color: #8fc44e;
+}
+
+#boxes .box a:hover {
+        color: #cccccc;
+        font-weight: bold;
+}
+
+/* Video-content*/
+#video-content {
+    padding: 20px;
+    width: 60vw;
+    margin:auto;
+}
+#video-content iframe {
+    width: 60vw;
+}
+
+/* Sidebar */
+article.sidebar {
+    float: right;
+    width: 50%;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+article.sidebar img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Main-col*/
+article.main-col {
+    float: left;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 50%;
+}
+
+article h1 {
+    font-weight: bold;
+
+}
+
+.img-container {
+    width: 60%; 
+    min-height: 100px;
+    overflow: hidden;
+    margin: 40px auto;
+}
+
+.img-container img {
+    max-width: 100%;
+    display: block;
+}
+
+footer {
+    /* border-top: #8fc44e 3px solid; */
+    padding: 20px;
+    color: #2F4F4F;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Media Queries*/
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #boxes .box,
+    article.main-col,
+    article.sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header {
+        padding-bottom: 20px;
+    }
+    #showcase1 h1 {
+        margin-top: 40px;
+    }
+}
